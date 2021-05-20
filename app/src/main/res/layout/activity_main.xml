@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/app_description"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-light"
+        android:lineHeight="36sp"
+        android:padding="20dp"
+        android:text="@string/app_description"
+        android:textAlignment="center"
+        android:textColor="@color/design_default_color_primary"
+        android:textSize="24sp"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.google.android.material.switchmaterial.SwitchMaterial
+        android:id="@+id/switch_demo_mode"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="30"
+        android:text="@string/label_for_demo_mode"
+        android:textColor="@color/design_default_color_primary_dark"
+        android:textSize="14sp"
+        app:layout_constraintTop_toBottomOf="@+id/app_description" />
+
+
+    <com.google.android.material.switchmaterial.SwitchMaterial
+        android:id="@+id/switch_color_mode"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="30"
+        android:text="@string/label_for_color_mode_switch"
+        android:textColor="@color/design_default_color_primary_dark"
+        android:textSize="14sp"
+        app:layout_constraintTop_toBottomOf="@+id/switch_demo_mode" />
+
+    <LinearLayout
+        android:id="@+id/pixel_density_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="100"
+        app:layout_constraintTop_toBottomOf="@+id/switch_color_mode">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="30"
+            android:text="@string/label_for_pixel_density_seekbar"
+            android:textColor="@color/design_default_color_primary_dark"
+            android:textSize="14sp" />
+
+        <com.google.android.material.slider.Slider
+            android:id="@+id/slider_pixel_density"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="70"
+            android:stepSize="0.05"
+            android:value="0.5"
+            android:valueFrom="0"
+            android:valueTo="1" />
+
+    </LinearLayout>
+
+
+    <GridLayout
+        android:id="@+id/image_container"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:columnCount="3"
+        android:useDefaultMargins="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent">
+
+        <ImageView
+            android:minWidth="100dp"
+            android:minHeight="100dp"
+            android:src="@drawable/empty_image_container"
+            android:tag="@string/pixel_images" />
+
+        <ImageView
+            android:minWidth="100dp"
+            android:minHeight="100dp"
+            android:src="@drawable/empty_image_container"
+            android:tag="@string/pixel_images" />
+
+        <ImageView
+            android:minWidth="100dp"
+            android:minHeight="100dp"
+            android:src="@drawable/empty_image_container"
+            android:tag="@string/pixel_images" />
+
+        <ImageView
+            android:minWidth="100dp"
+            android:minHeight="100dp"
+            android:src="@drawable/empty_image_container"
+            android:tag="@string/pixel_images" />
+
+        <ImageView
+            android:minWidth="100dp"
+            android:minHeight="100dp"
+            android:src="@drawable/empty_image_container"
+            android:tag="@string/pixel_images" />
+
+        <ImageView
+            android:minWidth="100dp"
+            android:minHeight="100dp"
+            android:src="@drawable/empty_image_container"
+            android:tag="@string/pixel_images" />
+
+        <ImageView
+            android:minWidth="100dp"
+            android:minHeight="100dp"
+            android:src="@drawable/empty_image_container"
+            android:tag="@string/pixel_images" />
+
+        <ImageView
+            android:minWidth="100dp"
+            android:minHeight="100dp"
+            android:src="@drawable/empty_image_container"
+            android:tag="@string/pixel_images" />
+
+        <ImageView
+            android:minWidth="100dp"
+            android:minHeight="100dp"
+            android:src="@drawable/empty_image_container"
+            android:tag="@string/pixel_images" />
+
+
+    </GridLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

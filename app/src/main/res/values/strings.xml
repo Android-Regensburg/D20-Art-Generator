@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Art Generator</string>
+    <string name="button_label">Generate Image</string>
+    <string name="app_description">Tap one of the squares to generate a new pixel image</string>
+    <string name="label_for_color_mode_switch">Color mode</string>
+    <string name="label_for_pixel_density_seekbar">Pixel density</string>
+    <string name="pixel_images">Pixel Images</string>
+    <string name="label_for_demo_mode">Use delay</string>
+</resources>
